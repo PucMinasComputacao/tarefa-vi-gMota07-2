@@ -15,12 +15,10 @@ No trabalho dessa semana vamos alterar o projeto para que a responsividade da ho
 - Breve descrição sobre seu projeto: Galeria de Informações do Clube Atlético Mineiro, jogadores titulares, titulos, história, Criadores e Contato
 
 ## Print da versão responsiva com Bootstrap [DESKTOP]
-
-<<  COLOQUE A IMAGEM AQUI >>
+![Desktop](image.png)
 
 ## Print da versão responsiva com Bootstrap [MOBILE] (*)
 
-<<  COLOQUE A IMAGEM AQUI >>
-
+![Mobile](image-1.png)
 
 (*) Utilize as ferramentas do desenvolvedor do seu navegador para colocar no modo reponsivo, escolha um celular qualquer e recarregue a página antes de tirar o print. 
