@@ -1,12 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Clube Atlético Mineiro</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="cabecalho">
+            <label class="hamburger" for="menu-toggle">
+                <span></span><span></span><span></span>
+            </label>
+            <h3>Clube Atlético Mineiro</h3>
+            <input type="text" placeholder="Buscar jogadores...">
+        </div>
+    </header>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <div class="layout">
+        <aside>
+            <label class="overlay" for="menu-toggle"></label>
+            <div class="menu">
+                <ul>
+                    <li>Jogadores</li>
+                    <li>Títulos</li>
+                    <li>História</li>
+                    <li>Criadores</li>
+                    <li>Contato</li>
+                </ul>
+            </div>
+        </aside>
+
+        <main>
+            <div class="conteudo">
+
+                <!-- SLIDER CARROSSEL -->
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide"><img src="images/banner-fim-ano.webp" alt="Banner 1"></div>
+                        <div class="slide"><img src="images/banner-fim-ano.webp" alt="Banner 2"></div>
+                        <div class="slide"><img src="images/banner-fim-ano.webp" alt="Banner 3"></div>
+                    </div>
+                </div>
+
+                <h1>Jogadores Titulares</h1>
+                <br>
+                <h2>Defesa</h2>
+
+                <div class="cards-container">
+                    <div class="cards-divisoes">
+                        <div class="cards">
+                            <div class="card">
+                                <img src="images/everson.jpg" alt="Everson">
+                                <div class="info">
+                                    <p>Everson Felipe Marques Pires</p>
+                                    <small class="posicao">Goleiro</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="images/renan.webp" alt="Renan Lodi">
+                                <div class="info">
+                                    <p>Renan Augusto Lodi dos Santos</p>
+                                    <small class="posicao">Lateral Esquerdo</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="images/Preciadoo.webp" alt="Preciado">
+                                <div class="info">
+                                    <p>Angelo Smit Preciado Quiñónez</p>
+                                    <small class="posicao">Lateral Direito</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="images/lyanco.webp" alt="Lyanco">
+                                <div class="info">
+                                    <p>Lyanco Evangelista Silveira Neves Vojnović</p>
+                                    <small class="posicao">Zagueiro</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="images/ruan.jpg" alt="Ruan">
+                                <div class="info">
+                                    <p>Ruan Tressoldi Netto</p>
+                                    <small class="posicao">Zagueiro</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>Meio</h2>
+                    <div class="cards-divisoes">
+                        <div class="cards">
+                            <div class="card">
+                                <img src="images/alanFranco.webp" alt="Alan Franco">
+                                <div class="info">
+                                    <p>Alan Steven Franco Palma</p>
+                                    <small class="posicao">Volante</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="images/scarpa.webp" alt="Scarpa">
+                                <div class="info">
+                                    <p>Gustavo Henrique Furtado Scarpa</p>
+                                    <small class="posicao">Meio-campista</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="images/victorHugo.webp" alt="Victor Hugo">
+                                <div class="info">
+                                    <p>Victor Hugo Gomes Silva</p>
+                                    <small class="posicao">Meio-campista</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>Ataque</h2>
+                    <div class="cards-divisoes">
+                        <div class="cards">
+                            <div class="card">
+                                <img src="images/hulk.webp" alt="Hulk">
+                                <div class="info">
+                                    <p>Givanildo Vieira de Sousa</p>
+                                    <small class="posicao">Atacante</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="images/dudu.webp" alt="Dudu">
+                                <div class="info">
+                                    <p>Eduardo Pereira Rodrigues</p>
+                                    <small class="posicao">Ponta Esquerda</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="images/Minda.webp" alt="Minda">
+                                <div class="info">
+                                    <p>Alan Minda</p>
+                                    <small class="posicao">Ponta Direita</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <p>Feito por Gabriel Mota - 2026</p>
+        </div>
+    </footer>
 </body>
+
 </html>
