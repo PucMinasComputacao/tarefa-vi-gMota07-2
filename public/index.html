@@ -1,177 +1,337 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Clube Atlético Mineiro</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galo Galeria — Clube Atlético Mineiro</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&family=Barlow:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <div class="cabecalho">
-            <label class="hamburger" for="menu-toggle">
-                <span></span><span></span><span></span>
-            </label>
-            <h3>Clube Atlético Mineiro</h3>
-            <input type="text" placeholder="Buscar jogadores...">
+
+  <!-- ============================================================
+       HEADER
+  ============================================================ -->
+  <header class="site-header sticky-top">
+    <div class="container-fluid px-4">
+      <div class="d-flex align-items-center justify-content-between py-3">
+
+        <!-- Logo / Nome do site -->
+        <div>
+          <span class="brand-name">Galo <span class="text-white">Galeria</span></span>
+          <span class="brand-tag d-block">Clube Atlético Mineiro</span>
         </div>
-    </header>
 
-    <input type="checkbox" id="menu-toggle">
+        <!-- Barra de navegação Desktop — 5 links internos -->
+        <nav class="d-none d-md-flex gap-4">
+          <a href="#inicio"    class="nav-link-custom">Início</a>
+          <a href="#sobre"     class="nav-link-custom">Sobre</a>
+          <a href="#galeria"   class="nav-link-custom">Galeria</a>
+          <a href="#jogadores" class="nav-link-custom">Jogadores</a>
+          <a href="#titulos"   class="nav-link-custom">Títulos</a>
+        </nav>
 
-    <div class="layout">
-        <aside>
-            <label class="overlay" for="menu-toggle"></label>
-            <div class="menu">
-                <ul>
-                    <li>Jogadores</li>
-                    <li>Títulos</li>
-                    <li>História</li>
-                    <li>Criadores</li>
-                    <li>Contato</li>
-                </ul>
-            </div>
-        </aside>
+        <!-- Botão hambúrguer — só aparece no mobile -->
+        <button class="btn btn-outline-warning d-md-none"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#menuMobile"
+                aria-label="Abrir menu">
+          <i class="bi bi-list fs-4"></i>
+        </button>
 
-        <main>
-            <div class="conteudo">
-
-                <!-- SLIDER CARROSSEL -->
-                <div class="slider">
-                    <div class="slides">
-                        <div class="slide"><img src="images/banner-fim-ano.webp" alt="Banner 1"></div>
-                        <div class="slide"><img src="images/banner-fim-ano.webp" alt="Banner 2"></div>
-                        <div class="slide"><img src="images/banner-fim-ano.webp" alt="Banner 3"></div>
-                    </div>
-                </div>
-
-                <h1>Jogadores Titulares</h1>
-                <br>
-                <h2>Defesa</h2>
-
-                <div class="cards-container">
-                    <div class="cards-divisoes">
-                        <div class="cards">
-                            <div class="card">
-                                <img src="images/everson.jpg" alt="Everson">
-                                <div class="info">
-                                    <p>Everson Felipe Marques Pires</p>
-                                    <small class="posicao">Goleiro</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cards">
-                            <div class="card">
-                                <img src="images/renan.webp" alt="Renan Lodi">
-                                <div class="info">
-                                    <p>Renan Augusto Lodi dos Santos</p>
-                                    <small class="posicao">Lateral Esquerdo</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cards">
-                            <div class="card">
-                                <img src="images/Preciadoo.webp" alt="Preciado">
-                                <div class="info">
-                                    <p>Angelo Smit Preciado Quiñónez</p>
-                                    <small class="posicao">Lateral Direito</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cards">
-                            <div class="card">
-                                <img src="images/lyanco.webp" alt="Lyanco">
-                                <div class="info">
-                                    <p>Lyanco Evangelista Silveira Neves Vojnović</p>
-                                    <small class="posicao">Zagueiro</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cards">
-                            <div class="card">
-                                <img src="images/ruan.jpg" alt="Ruan">
-                                <div class="info">
-                                    <p>Ruan Tressoldi Netto</p>
-                                    <small class="posicao">Zagueiro</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h2>Meio</h2>
-                    <div class="cards-divisoes">
-                        <div class="cards">
-                            <div class="card">
-                                <img src="images/alanFranco.webp" alt="Alan Franco">
-                                <div class="info">
-                                    <p>Alan Steven Franco Palma</p>
-                                    <small class="posicao">Volante</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cards">
-                            <div class="card">
-                                <img src="images/scarpa.webp" alt="Scarpa">
-                                <div class="info">
-                                    <p>Gustavo Henrique Furtado Scarpa</p>
-                                    <small class="posicao">Meio-campista</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cards">
-                            <div class="card">
-                                <img src="images/victorHugo.webp" alt="Victor Hugo">
-                                <div class="info">
-                                    <p>Victor Hugo Gomes Silva</p>
-                                    <small class="posicao">Meio-campista</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h2>Ataque</h2>
-                    <div class="cards-divisoes">
-                        <div class="cards">
-                            <div class="card">
-                                <img src="images/hulk.webp" alt="Hulk">
-                                <div class="info">
-                                    <p>Givanildo Vieira de Sousa</p>
-                                    <small class="posicao">Atacante</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cards">
-                            <div class="card">
-                                <img src="images/dudu.webp" alt="Dudu">
-                                <div class="info">
-                                    <p>Eduardo Pereira Rodrigues</p>
-                                    <small class="posicao">Ponta Esquerda</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cards">
-                            <div class="card">
-                                <img src="images/Minda.webp" alt="Minda">
-                                <div class="info">
-                                    <p>Alan Minda</p>
-                                    <small class="posicao">Ponta Direita</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </main>
+      </div>
     </div>
+  </header>
 
-    <footer>
-        <div class="footer">
-            <p>Feito por Gabriel Mota - 2026</p>
+  <!-- Menu Mobile (Offcanvas Bootstrap) -->
+  <div class="offcanvas offcanvas-start site-offcanvas" tabindex="-1" id="menuMobile">
+    <div class="offcanvas-header border-bottom border-secondary">
+      <span class="offcanvas-title brand-name">Galo Galeria</span>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <nav class="d-flex flex-column gap-1">
+        <a href="#inicio"    class="nav-link-mobile" data-bs-dismiss="offcanvas">Início</a>
+        <a href="#sobre"     class="nav-link-mobile" data-bs-dismiss="offcanvas">Sobre</a>
+        <a href="#galeria"   class="nav-link-mobile" data-bs-dismiss="offcanvas">Galeria</a>
+        <a href="#jogadores" class="nav-link-mobile" data-bs-dismiss="offcanvas">Jogadores</a>
+        <a href="#titulos"   class="nav-link-mobile" data-bs-dismiss="offcanvas">Títulos</a>
+      </nav>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       MAIN
+  ============================================================ -->
+  <main>
+
+    <!-- ── BANNER PRINCIPAL (Hero) ────────────────────────── -->
+    <section id="inicio" class="hero-section d-flex align-items-end">
+
+      <!-- Número decorativo de fundo -->
+      <span class="hero-bg-number" aria-hidden="true">1908</span>
+
+      <div class="container pb-5">
+        <div class="row">
+          <div class="col-12 col-lg-7">
+
+            <p class="hero-eyebrow">Bem-vindo à galeria oficial</p>
+
+            <h1 class="hero-title">
+              O Maior<br>
+              <span class="text-gold">do Brasil.</span>
+            </h1>
+
+            <p class="hero-sub">
+              Uma homenagem ao Clube Atlético Mineiro — história, ídolos,
+              conquistas e a paixão que move o Galo desde 1908.
+            </p>
+
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="#galeria" class="btn btn-gold">Explorar Galeria</a>
+              <a href="#sobre"   class="btn btn-outline-gold">Conheça o Clube</a>
+            </div>
+
+          </div>
         </div>
-    </footer>
-</body>
 
+        <!-- Estatísticas rápidas -->
+        <div class="d-flex flex-wrap gap-4 mt-5">
+          <div class="stat-item">
+            <span class="stat-num">116</span>
+            <span class="stat-lbl">Anos de história</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">49+</span>
+            <span class="stat-lbl">Títulos conquistados</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">70k</span>
+            <span class="stat-lbl">Lugares na Arena MRV</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ── TEXTO INTRODUTÓRIO ──────────────────────────────── -->
+    <section id="sobre" class="intro-section py-5">
+      <div class="container py-4">
+        <div class="row align-items-center g-5">
+
+          <!-- Texto -->
+          <div class="col-12 col-md-5">
+            <p class="section-label">Sobre o clube</p>
+            <h2 class="section-title">Uma paixão<br>que não tem fim</h2>
+            <div class="gold-divider my-3"></div>
+            <p class="body-text">
+              Fundado em 25 de março de 1908, o Clube Atlético Mineiro é um dos
+              maiores clubes do futebol brasileiro. Com sede em Belo Horizonte,
+              o Galo acumula décadas de glórias, ídolos imortais e uma torcida
+              apaixonada que lota estádios em todo o país.
+            </p>
+            <p class="body-text mt-3">
+              Esta galeria reúne os jogadores titulares, os grandes momentos e
+              os títulos que escreveram a história de um clube lendário.
+              Navegue, relembre e celebre o Atletismo.
+            </p>
+            <a href="#galeria" class="card-link mt-3 d-inline-flex align-items-center gap-2">
+              Ver a galeria <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Citação + mini-cards -->
+          <div class="col-12 col-md-7">
+            <div class="quote-block mb-4">
+              <i class="bi bi-quote quote-icon"></i>
+              <p class="quote-text">
+                "Atleticano não é torcedor. É religião, é sangue, é grito na
+                garganta e coração na Arena."
+              </p>
+              <span class="quote-author">— Torcida do Galo</span>
+            </div>
+
+            <div class="row g-3">
+              <div class="col-6">
+                <div class="mini-card">
+                  <i class="bi bi-trophy-fill text-gold fs-4 mb-2"></i>
+                  <p class="mini-card-title">Copa Libertadores</p>
+                  <p class="mini-card-text">Campeão em 2013, o maior título da América do Sul.</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="mini-card">
+                  <i class="bi bi-star-fill text-gold fs-4 mb-2"></i>
+                  <p class="mini-card-title">Brasileirão</p>
+                  <p class="mini-card-text">Tricampeão nacional, dono das maiores séries do país.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================================
+       SECTION — CARDS DE CONTEÚDO
+  ============================================================ -->
+  <section id="galeria" class="cards-section py-5">
+    <div class="container py-4">
+
+      <div class="text-center mb-5">
+        <p class="section-label">O que você encontra aqui</p>
+        <h2 class="section-title">Explore a Galeria</h2>
+      </div>
+
+      <!-- 3 cards, cada um com imagem + título + descrição -->
+      <div class="row g-4">
+
+        <!-- Card 1 — Jogadores -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="galeria-card h-100">
+            <div class="card-img-wrap">
+              <img src="images/hulk.webp" alt="Jogadores do Atlético Mineiro">
+              <span class="card-tag">Elenco</span>
+            </div>
+            <div class="card-body-custom">
+              <h3 class="card-title-custom">Jogadores Titulares</h3>
+              <p class="card-text-custom">
+                Conheça o elenco atual do Galo — goleiros, defensores,
+                meio-campistas e atacantes que vestem a camisa preta e branca
+                com orgulho a cada partida.
+              </p>
+              <a href="jogadores.html" class="card-link d-inline-flex align-items-center gap-2">
+                Ver elenco <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 — Títulos -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="galeria-card h-100">
+            <div class="card-img-wrap">
+              <img src="images/banner-fim-ano.webp" alt="Títulos do Atlético Mineiro">
+              <span class="card-tag">Conquistas</span>
+            </div>
+            <div class="card-body-custom">
+              <h3 class="card-title-custom">Títulos & Conquistas</h3>
+              <p class="card-text-custom">
+                Da Copa Libertadores de 2013 ao Brasileirão, relembre os momentos
+                épicos que colocaram o Atlético Mineiro no topo do futebol
+                sul-americano.
+              </p>
+              <a href="#titulos" class="card-link d-inline-flex align-items-center gap-2">
+                Ver títulos <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 — História -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="galeria-card h-100">
+            <div class="card-img-wrap">
+              <img src="images/everson.jpg" alt="História do Atlético Mineiro">
+              <span class="card-tag">História</span>
+            </div>
+            <div class="card-body-custom">
+              <h3 class="card-title-custom">A História do Galo</h3>
+              <p class="card-text-custom">
+                Desde 1908, o Clube Atlético Mineiro escreve páginas gloriosas.
+                Descubra como o Galo se tornou um dos clubes mais tradicionais
+                e vitoriosos do Brasil.
+              </p>
+              <a href="#sobre" class="card-link d-inline-flex align-items-center gap-2">
+                Conhecer história <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Coluna 1 — Marca + redes sociais -->
+        <div class="col-12 col-md-4">
+          <p class="brand-name mb-1">Galo Galeria</p>
+          <p class="footer-desc">
+            Um projeto de homenagem ao Clube Atlético Mineiro. Feito com amor
+            pela camisa preta e branca.
+          </p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="https://instagram.com/atletico" target="_blank" class="social-btn" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://twitter.com/atletico" target="_blank" class="social-btn" aria-label="Twitter/X">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://facebook.com/atletico" target="_blank" class="social-btn" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://youtube.com/@atletico" target="_blank" class="social-btn" aria-label="YouTube">
+              <i class="bi bi-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna 2 — Links de navegação -->
+        <div class="col-6 col-md-2 offset-md-2">
+          <p class="footer-heading">Navegação</p>
+          <a href="#inicio"    class="footer-link">Início</a>
+          <a href="#sobre"     class="footer-link">Sobre</a>
+          <a href="#galeria"   class="footer-link">Galeria</a>
+          <a href="#jogadores" class="footer-link">Jogadores</a>
+          <a href="#titulos"   class="footer-link">Títulos</a>
+        </div>
+
+        <!-- Coluna 3 — Informações institucionais -->
+        <div class="col-6 col-md-3">
+          <p class="footer-heading">Informações</p>
+          <p class="footer-info"><i class="bi bi-geo-alt me-1"></i> Belo Horizonte, MG</p>
+          <p class="footer-info"><i class="bi bi-calendar me-1"></i> Fundado em 25/03/1908</p>
+          <p class="footer-info"><i class="bi bi-globe me-1"></i> atletico.com.br</p>
+          <p class="footer-info"><i class="bi bi-palette me-1"></i> Preto e Branco</p>
+        </div>
+
+      </div>
+
+      <!-- Rodapé inferior -->
+      <hr class="footer-divider mt-4 mb-3">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <p class="footer-bottom-text mb-0">© 2026 Galo Galeria — Feito por Gabriel Mota</p>
+        <p class="footer-bottom-text mb-0">Trabalho acadêmico — Engenharia de Software · 1º Período</p>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>
